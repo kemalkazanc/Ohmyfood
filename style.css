@@ -4,6 +4,7 @@
 
 body{
   margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
 header{
@@ -11,6 +12,64 @@ header{
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   padding: 0.2rem;
+  margin: 0;
+  position: relative;
 }
+
+main .city{
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+main .city i{
+  font-size: 1.5rem;
+}
+
+/* Réservez */
+.reservez{
+  text-align: center;
+  flex-direction: column;
+}
+
+.reservez h2{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.reservez p{
+  font-size: 1rem;
+}
+
+.reservez button{
+  background-image: linear-gradient(to top, rgba(147,86,220,0.9), rgba(225,121,218,0.9));
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 25px;
+  margin-top: 1rem;
+  transition: transform 200ms;
+  -webkit-transition: transform 200ms;
+  -moz-transition: transform 200ms;
+  -ms-transition: transform 200ms;
+  -o-transition: transform 200ms;
+}
+
+.reservez button:hover{
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  opacity: 0.9;
+}
+
 
 /*# sourceMappingURL=style.css.map */
