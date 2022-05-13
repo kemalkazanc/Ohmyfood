@@ -1,0 +1,16 @@
+@use "../mixin/shadow.scss";
+
+.container {
+    border: 1px solid red;
+
+    & div{
+        background: #f6f6f6;
+        border: 1px solid red;
+        padding: 1rem 2rem;
+        flex-wrap: wrap;
+    }
+    &fonctionnement{
+        flex-direction: row;
+    }
+  }
+

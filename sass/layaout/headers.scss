@@ -1,0 +1,10 @@
+@import "../mixin/shadow.scss";
+
+header{
+    font-family: "Shrikhand", cursive;
+    text-align: center;
+    @include base-shadow;
+    padding: 0.2rem;
+    margin: 0;
+    position: relative;
+  }
