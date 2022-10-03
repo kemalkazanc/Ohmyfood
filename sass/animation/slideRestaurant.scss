@@ -1,0 +1,50 @@
+
+/* Animation vers le haut */
+@keyframes slideUp {
+    0% {
+        transform: translateY(200px);
+        -webkit-transform: translateY(200px);
+        -moz-transform: translateY(200px);
+        -ms-transform: translateY(200px);
+        -o-transform: translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* Animation des cartes vers la droite */
+@keyframes slideLeft {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100px;
+    }
+    100%{
+        width: 0px;
+    }
+}
+
+/* Animation pour l'incon  */
+@keyframes turnIcon {
+    0%{
+        transform: rotate(-270deg);
+        -webkit-transform: rotate(-270deg);
+        -moz-transform: rotate(-270deg);
+        -ms-transform: rotate(-270deg);
+        -o-transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}

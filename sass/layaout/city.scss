@@ -1,12 +1,17 @@
 .city{
-    background-color: #f3f3f3;
-    text-align: center;
-    padding: 0.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    &i{
-            font-size: 1.5rem;
-        }
-  }
+    &__container{
+        background-color: #f3f3f3;
+        text-align: center;
+        padding: 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    &__icon{
+        font-size: 1.5rem;
+    }
+    &__title{
+        color: black;
+    }
+}

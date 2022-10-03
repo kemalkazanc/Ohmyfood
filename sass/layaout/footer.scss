@@ -1,0 +1,29 @@
+/* FOOTER */
+.footer{
+    &__containt{
+        background-color: $lightBlack;
+        color: $white;
+        margin: 0;
+        padding: 10px;
+        position: relative;
+    }
+    &__title{
+        font-family: "Shrikhand", cursive;
+    }
+    &__container{
+        background-color: $lightBlack;
+    }
+    &__icon{
+        font-size: 1rem;
+    }
+    &__icon2{
+        font-size: 0.8rem;
+    }
+    &__link{
+        color: $white;
+        text-decoration: none;
+        display: flex;
+        gap: 1rem;
+        padding: 0.2rem;
+    }
+}

@@ -1,24 +1,28 @@
-@use "../animation.scss/zoom.scss";
-@use "../mixin/shadow.scss";
+
 /* ----- Réservez ----- */
 .reservez{
     text-align: center;
     flex-direction: column;
-  &reservez h2{
+    background-color: lightGrey;
+  &__container{
+    text-align: center;
+    background-color: $bgReservez;
+    padding: 1rem;
+  }
+  &__title{
     margin-top: 2rem;
     font-size: 2rem;
   }
-  &reservez p{
+  &__description{
     font-size: 1rem;
   }
-  &reservez button{
-    background-image: linear-gradient(to top, rgba(147,86,220,0.9), rgba(225,121,218,0.9));
-    color: #fff;
-    font-weight: 300;
+  &__btnExplorer{
+    background-image: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    color:$white;
     font-size: 1.5rem;
     padding: 1rem;
     border: none;
-    @include shadow.base-shadow;
+    @include base-shadow;
     border-radius: 25px;
     margin-top: 1rem;
     transition: transform 200ms;
@@ -26,9 +30,10 @@
     -moz-transition: transform 200ms;
     -ms-transition: transform 200ms;
     -o-transition: transform 200ms;
-  }
-  &reservez button:hover{
-    @include zoom.zoom;
-    opacity: 0.9;
+    &:hover{
+      @include zoom;
+      opacity: 0.9;
+    }
   }
 }
+

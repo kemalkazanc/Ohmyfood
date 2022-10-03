@@ -1,10 +1,19 @@
-@import "../mixin/shadow.scss";
 
-header{
-    font-family: "Shrikhand", cursive;
-    text-align: center;
-    @include base-shadow;
-    padding: 0.2rem;
-    margin: 0;
-    position: relative;
+.header {
+    &__container{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-family: "Shrikhand", cursive;
+      text-align: center;
+      @include base-shadow;
+      padding: 0.2rem;
+      margin: 0;
+      position: relative;
+    }
+    &__title{
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+    }
   }

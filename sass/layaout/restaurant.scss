@@ -1,0 +1,128 @@
+/* -- Restaurant-- */
+.restaurant{
+    background-color:$lightGrey;
+    padding: 1.1rem;
+    justify-content: center;
+    &__title{
+        position: sticky;
+        left: 3rem;
+        width: 95%;
+    }
+    &__check1{
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and(min-width:1080px) {
+            flex-direction: row;
+        }
+    }
+    &__check2{
+        display: flex;
+        flex-direction: column;
+        @media only screen and(min-width:1080px) {
+            flex-direction: row;
+        }
+    }
+    &__cube{
+        width: 100%;
+        background-color: $lightGrey;
+        position: relative;
+        margin: 2.5rem 2rem 0 0;
+        display: flex;
+        flex-direction: column;
+        animation: slideUp 1s forwards ;
+        transition: 0.4s;
+        justify-content: center;
+        -webkit-animation: slideUp 1s forwards ;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+    }
+    &__img{
+        height: 200px;
+        width: 100%;
+        border-radius: 1.5rem 1.5rem 0 0;
+        -webkit-border-radius: 1.5rem 1.5rem 0 0;
+        -moz-border-radius: 1.5rem 1.5rem 0 0;
+        -ms-border-radius: 1.5rem 1.5rem 0 0;
+        -o-border-radius: 1.5rem 1.5rem 0 0;
+        object-fit: cover;
+        margin-bottom: -8px;
+    }
+    &__badge{
+        position: absolute;
+        display: flex;
+        background-color: $vertcasser;
+        color: $vertBadge;
+        padding: 0.5rem;
+        width: 5rem;
+        font-weight: bold;
+        margin-top: -11rem;
+        right: 2rem;
+        border-radius: 0.2rem;
+    }
+    &__cubeDetail{
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0 0 1.5rem 1.5rem;
+        -webkit-border-radius: 0 0 1.5rem 1.5rem;
+        -moz-border-radius: 0 0 1.5rem 1.5rem;
+        -ms-border-radius: 0 0 1.5rem 1.5rem;
+        -o-border-radius: 0 0 1.5rem 1.5rem;
+        &:hover .fas{
+            opacity: 1;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+        }
+    }
+    &__h3{
+        margin: 0;
+        margin-left: 1rem;
+    }
+    &__info{
+        display: flex;
+        position: relative;
+    }
+    &__titleInfo{
+        margin: 0;
+        margin-left:1rem;
+        font-weight: 300;
+        width: 150px;
+    }
+    &__coeur{
+        display: flex;
+        position: absolute;
+        right: 2.5rem;
+    }
+    &__icon{
+        font-size: 1.5rem;
+        position: absolute;
+        margin-left: auto;
+    }
+    &__icon2{
+        font-size: 1.5rem;
+        margin-left: auto;
+        position: absolute
+    }
+    .fas{
+        background-image: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transform: 2s ease-in;
+        -webkit-transform: 2s ease-in;
+        -moz-transform: 2s ease-in;
+        -ms-transform: 2s ease-in;
+        -o-transform: 2s ease-in;
+        opacity: 0;
+}
+}

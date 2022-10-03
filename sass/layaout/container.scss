@@ -1,16 +1,74 @@
-@use "../mixin/shadow.scss";
 
-.container {
-    border: 1px solid red;
+.tuto {
+    &__title{
+        position: sticky;
+        margin-left: 3rem;
+    }
+    &__main{
+        display: flex;
+        position: relative;
+        flex-direction: column;
 
-    & div{
+    }
+    &__miniContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media only screen and (min-width: 600px){
+            flex-direction: row;
+            font-size: 20px;
+        }
+    }
+    &__miniContainer2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        @media only screen and (min-width: 600px) {
+            flex-direction: row;
+            font-size: 20px;
+        }
+    }
+    &__fonctionnement{
+        gap: 10px;
+        display: flex;
+        justify-content: center;
         background: #f6f6f6;
-        border: 1px solid red;
-        padding: 1rem 2rem;
-        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        margin: 25px;
+        position: relative;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        &:hover{
+            background-color: $lightPurple;
+        }
     }
-    &fonctionnement{
-        flex-direction: row;
+    &__number{
+        background-color: #9356DC;
+        border-radius: 50%;
+        font-size: 1rem;
+        width: 20px;
+        margin: 0;
+        color: white;
+        position: absolute;
+        left: -10px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
     }
+    &__icon{
+        &:hover{
+            background-color: $lightPurple;
+        }
+    }
+    &__city__icon {
+        margin: 50px;
+        background-color: red;
+    }
+
   }
 

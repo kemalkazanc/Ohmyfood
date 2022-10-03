@@ -1,0 +1,58 @@
+/* Animation loader */
+
+@keyframes flash {
+    0% {
+        color: #9356DC;
+        text-shadow: 0 0 7px #99E2D0;
+        opacity: 1;
+    }
+    80% {
+        color: #FF79DA;
+        text-shadow: none;
+        opacity: 1;
+    }
+    90% {
+        color: #9356DC;
+        text-shadow: 0 0 7px #99E2D0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes up {
+    0% {
+        z-index: 99;
+    }
+    100% {
+        z-index: -99;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.lettre:nth-child(1){
+    animation-delay: 0.1s;
+}
+.lettre:nth-child(2){
+    animation-delay: 0.2s;
+}
+.lettre:nth-child(3){
+    animation-delay: 0.3s;
+}
+.lettre:nth-child(4){
+    animation-delay: 0.4s;
+}
+.lettre:nth-child(5){
+    animation-delay: 0.5s;
+}
+.lettre:nth-child(6){
+    animation-delay: 0.6s;
+}
+.lettre:nth-child(7){
+    animation-delay: 0.7s;
+}
+.lettre:nth-child(8){
+    animation-delay: 0.8s;
+}
