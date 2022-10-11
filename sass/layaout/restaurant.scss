@@ -33,6 +33,7 @@
         animation: slideUp 1s forwards ;
         transition: 0.4s;
         justify-content: center;
+        border-radius: 0 0 1.5rem 1.5rem;
         -webkit-animation: slideUp 1s forwards ;
         -webkit-transition: 0.4s;
         -moz-transition: 0.4s;
@@ -70,11 +71,6 @@
     &__cubeDetail{
         background-color: white;
         padding: 1rem;
-        border-radius: 0 0 1.5rem 1.5rem;
-        -webkit-border-radius: 0 0 1.5rem 1.5rem;
-        -moz-border-radius: 0 0 1.5rem 1.5rem;
-        -ms-border-radius: 0 0 1.5rem 1.5rem;
-        -o-border-radius: 0 0 1.5rem 1.5rem;
         &:hover .fas{
             opacity: 1;
             transform: scale(1.2);
@@ -83,7 +79,12 @@
             -ms-transform: scale(1.2);
             -o-transform: scale(1.2);
         }
-    }
+        border-radius: 0 0 1.5rem 1.5rem;
+        -webkit-border-radius: 0 0 1.5rem 1.5rem;
+        -moz-border-radius: 0 0 1.5rem 1.5rem;
+        -ms-border-radius: 0 0 1.5rem 1.5rem;
+        -o-border-radius: 0 0 1.5rem 1.5rem;
+}
     &__h3{
         margin: 0;
         margin-left: 1rem;
