@@ -71,6 +71,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.images__container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
 .city__container {
   background-color: #f3f3f3;
   text-align: center;
@@ -128,21 +134,14 @@ body {
   font-size: 1.5rem;
   padding: 1rem;
   border: none;
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   border-radius: 25px;
   margin-top: 1rem;
   transition: transform 200ms;
-  -webkit-transition: transform 200ms;
-  -moz-transition: transform 200ms;
-  -ms-transition: transform 200ms;
-  -o-transition: transform 200ms;
 }
 .reservez__btnExplorer:hover {
   transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
   opacity: 0.9;
 }
 
@@ -187,10 +186,6 @@ body {
   margin: 25px;
   position: relative;
   border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
 }
 .tuto__fonctionnement:hover {
   background-color: rgba(146, 86, 220, 0.2);
@@ -200,14 +195,11 @@ body {
   border-radius: 50%;
   font-size: 1rem;
   width: 20px;
+  height: 20px;
   margin: 0;
   color: white;
   position: absolute;
   left: -10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
 }
 .tuto__icon:hover {
   background-color: rgba(146, 86, 220, 0.2);
@@ -257,11 +249,6 @@ body {
   transition: 0.4s;
   justify-content: center;
   border-radius: 0 0 1.5rem 1.5rem;
-  -webkit-animation: slideUp 1s forwards;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .restaurant__cube a {
@@ -272,10 +259,6 @@ body {
   height: 200px;
   width: 100%;
   border-radius: 1.5rem 1.5rem 0 0;
-  -webkit-border-radius: 1.5rem 1.5rem 0 0;
-  -moz-border-radius: 1.5rem 1.5rem 0 0;
-  -ms-border-radius: 1.5rem 1.5rem 0 0;
-  -o-border-radius: 1.5rem 1.5rem 0 0;
   object-fit: cover;
   margin-bottom: -8px;
 }
@@ -295,18 +278,10 @@ body {
   background-color: white;
   padding: 1rem;
   border-radius: 0 0 1.5rem 1.5rem;
-  -webkit-border-radius: 0 0 1.5rem 1.5rem;
-  -moz-border-radius: 0 0 1.5rem 1.5rem;
-  -ms-border-radius: 0 0 1.5rem 1.5rem;
-  -o-border-radius: 0 0 1.5rem 1.5rem;
 }
 .restaurant__cubeDetail:hover .fas {
   opacity: 1;
   transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
 }
 .restaurant__h3 {
   margin: 0;
@@ -326,6 +301,7 @@ body {
   display: flex;
   position: absolute;
   right: 2.5rem;
+  top: -1.2rem;
 }
 .restaurant__icon {
   font-size: 1.5rem;
@@ -342,12 +318,8 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transform: 2s ease-in;
-  -webkit-transform: 2s ease-in;
-  -moz-transform: 2s ease-in;
-  -ms-transform: 2s ease-in;
-  -o-transform: 2s ease-in;
   opacity: 0;
+  transition: all 0.2s ease-out;
 }
 
 /* FOOTER */
@@ -378,22 +350,21 @@ body {
   padding: 0.2rem;
 }
 
-img {
-  max-width: 100%;
+.images__container img {
+  height: auto;
+  max-height: 100%;
+  width: 100%;
+  text-align: center;
+  object-fit: cover;
 }
 
 .menu__container {
   background-color: #f8f5f5;
-  margin-top: -4rem;
+  margin-top: -1.5rem;
   padding: 0.5rem;
   position: relative;
   border-radius: 2rem 2rem 0 0;
-  -webkit-border-radius: 2rem 2rem 0 0;
-  -moz-border-radius: 2rem 2rem 0 0;
-  -ms-border-radius: 2rem 2rem 0 0;
-  -o-border-radius: 2rem 2rem 0 0;
   gap: 2rem;
-  cursor: pointer;
 }
 .menu__titleResto {
   display: grid;
@@ -406,40 +377,38 @@ img {
   font-family: "Shrikhand", cursive;
   font-style: italic;
 }
-.menu__Coeur {
+.menu__coeur {
   display: flex;
   position: absolute;
-  right: 2.5rem;
+  right: 1rem;
+  top: 4rem;
 }
-.menu__Coeur:hover .fas {
+.menu__coeur:hover .fas {
+  cursor: pointer;
+  background-image: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   opacity: 1;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
+  transition: all ease-in;
 }
 .menu__RestaurantTitleCoeur {
   font-size: 1.5rem;
   right: 1.5rem;
   position: absolute;
+  opacity: 0;
+}
+.menu__RestaurantTitleCoeur:hover {
+  background-image: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  opacity: 1;
+  background-clip: text;
+  color: transparent;
 }
 .menu__RestaurantTitleCoeur2 {
   font-size: 1.5rem;
   right: 1.5rem;
   position: absolute;
-}
-.menu .fas {
-  background-image: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  transform: 2s ease-in;
-  -webkit-transform: 2s ease-in;
-  -moz-transform: 2s ease-in;
-  -ms-transform: 2s ease-in;
-  -o-transform: 2s ease-in;
-  opacity: 0;
+  opacity: 1;
 }
 .menu__TitleCardRestaurant {
   margin: 1rem;
@@ -460,6 +429,12 @@ img {
 .menu__blocInfo {
   width: 100%;
   padding: 1.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu__blocInfo:hover {
+  cursor: pointer;
 }
 .menu__info {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -468,22 +443,12 @@ img {
   margin: 1rem;
   justify-content: space-between;
   border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
   background-color: #fff;
-  animation: slideUp 1s forwards;
+  animation: slideUp 3s forwards;
   transition: 0.4s;
-  -webkit-animation: slideUp 1s forwards;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
 }
 .menu__info:hover .menu__clique {
   animation: slideLeft 2s;
-  -webkit-animation: slideLeft 2s;
 }
 .menu__info:hover .menu__clique .menu__cliqueIcon {
   transform: rotate(0deg);
@@ -498,11 +463,15 @@ img {
   margin: 0;
   font-weight: 400;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__para {
   margin: 0;
   font-weight: 200;
+  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 .menu__price {
   margin: 0;
@@ -522,10 +491,6 @@ img {
   align-items: center;
   overflow: hidden;
   border-radius: 0rem 1rem 1rem 0rem;
-  -webkit-border-radius: 0rem 1rem 1rem 0rem;
-  -moz-border-radius: 0rem 1rem 1rem 0rem;
-  -ms-border-radius: 0rem 1rem 1rem 0rem;
-  -o-border-radius: 0rem 1rem 1rem 0rem;
 }
 .menu__mainBtn {
   text-align: center;
@@ -539,20 +504,17 @@ img {
   padding: 1rem;
   border: none;
   border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+}
+.menu__btnCommander:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 .menu__cliqueIcon {
   font-size: 1.7rem;
   color: #fff;
   transform: rotate(-270deg);
   transition: transform 0.5s ease;
-  -webkit-transition: transform 0.5s ease;
-  -moz-transition: transform 0.5s ease;
-  -ms-transition: transform 0.5s ease;
-  -o-transition: transform 0.5s ease;
 }
 .menu__leftIcon {
   font-size: 2rem;
@@ -565,22 +527,30 @@ img {
   text-decoration: none;
 }
 
+.div1:nth-child(n) {
+  animation-delay: 150ms;
+}
+
+.div2:nth-child(n) {
+  animation-delay: 300ms;
+}
+
+.div3:nth-child(n) {
+  animation-delay: 450ms;
+}
+
+.div4:nth-child(n) {
+  animation-delay: 600ms;
+}
+
 /* Animation vers le haut */
 @keyframes slideUp {
   0% {
-    transform: translateY(200px);
-    -webkit-transform: translateY(200px);
-    -moz-transform: translateY(200px);
-    -ms-transform: translateY(200px);
-    -o-transform: translateY(200px);
+    transform: translateY(-700px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
@@ -600,17 +570,9 @@ img {
 @keyframes turnIcon {
   0% {
     transform: rotate(-270deg);
-    -webkit-transform: rotate(-270deg);
-    -moz-transform: rotate(-270deg);
-    -ms-transform: rotate(-270deg);
-    -o-transform: rotate(-270deg);
   }
   100% {
     transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
   }
 }
 .loader__container {
@@ -623,7 +585,6 @@ img {
   align-items: center;
   z-index: 1;
   animation: up 8s forwards;
-  -webkit-animation: up 8s forwards;
 }
 .loader__lettre {
   display: flex;
@@ -634,7 +595,6 @@ img {
   font-family: "Shrikhand", cursive;
   margin-bottom: 150px;
   animation: flash 1.2s linear infinite;
-  -webkit-animation: flash 1.2s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,14 +22,11 @@
     font-size: 1.5rem;
     padding: 1rem;
     border: none;
+    cursor: pointer;
     @include base-shadow;
     border-radius: 25px;
     margin-top: 1rem;
     transition: transform 200ms;
-    -webkit-transition: transform 200ms;
-    -moz-transition: transform 200ms;
-    -ms-transition: transform 200ms;
-    -o-transition: transform 200ms;
     &:hover{
       @include zoom;
       opacity: 0.9;

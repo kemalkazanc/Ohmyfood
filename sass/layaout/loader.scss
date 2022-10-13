@@ -9,7 +9,6 @@
         align-items: center;
         z-index: 1;
         animation: up 8s forwards;
-        -webkit-animation: up 8s forwards;
 }
     &__lettre{
         display: flex;
@@ -20,6 +19,5 @@
         font-family: "Shrikhand", cursive;
         margin-bottom: 150px;
         animation: flash 1.2s linear infinite;
-        -webkit-animation: flash 1.2s linear infinite;
     }
 }
